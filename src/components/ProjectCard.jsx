@@ -42,15 +42,17 @@ export default function ProjectCard({ title, description, tech, github, color })
         </div>
 
         {/* GitHub Button */}
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-green-600 transition-colors duration-200 mt-auto"
-        >
-          <FaGithub className="text-lg" />
-          View on GitHub
-        </a>
+        {github && (
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-green-600 transition-colors duration-200 mt-auto"
+          >
+            <FaGithub className="text-lg" />
+            View on GitHub
+          </a>
+        )}
       </div>
     </motion.div>
   )

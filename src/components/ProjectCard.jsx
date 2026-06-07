@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { FaGithub, FaCode } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 
 export default function ProjectCard({ title, description, tech, github, color }) {
   return (
@@ -15,14 +15,8 @@ export default function ProjectCard({ title, description, tech, github, color })
       />
 
       <div className="p-6 flex flex-col gap-4 flex-1">
-        {/* Icon + Title */}
-        <div className="flex items-center gap-3">
-          <div
-            className="p-2 rounded-lg"
-            style={{ backgroundColor: color + "20" }}
-          >
-            <FaCode style={{ color: color }} className="text-lg" />
-          </div>
+        {/* Title */}
+        <div>
           <h3 className="font-bold text-gray-900 text-lg">{title}</h3>
         </div>
 

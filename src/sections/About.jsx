@@ -8,7 +8,7 @@ const cards = [
         text: "A second-year IT student from Nepal, passionate about web development and always curious about how things are built on the web.",
     },
     {
-        icon: <FaCode className="text-orange-500 text-2xl" />,
+        icon: <FaCode className="text-pink-600 text-2xl" />,
         title: "What I Learn",
         text: "React, JavaScript, HTML, CSS, Tailwind CSS, Git, and responsive design. I enjoy building projects that help me apply what I learn.",
     },

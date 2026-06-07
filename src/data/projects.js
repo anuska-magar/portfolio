@@ -15,7 +15,7 @@ export const projects = [
     tech: ["React", "Vite", "Lucide React Icons"],
     category: ["React", "Education"],
     github: "https://github.com/anuska-magar/internsath",
-    color: "#F97316",
+    color: "#db2777",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const projects = [
     tech: ["Java", "CSS", "JavaScript", "Maven"],
     category: ["Java", "Group Project"],
     github: "https://github.com/Iamashwin007/YatraGo",
-    color: "#F97316",
+    color: "#db2777",
   },
   {
     id: 5,

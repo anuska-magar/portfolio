@@ -29,7 +29,7 @@ export default function Hero() {
               Anuska Magar
             </h1>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-orange-500 mb-6">
+            <h2 className="text-xl md:text-2xl font-semibold text-pink-600 mb-6">
               Frontend Developer & IT Student
             </h2>
 

@@ -9,7 +9,7 @@ export default function ContactCard({ icon, label, value, href }) {
       whileHover={{ y: -4, boxShadow: "0 10px 30px rgba(22,163,74,0.12)" }}
       className="bg-white border border-gray-200 rounded-2xl p-6 flex items-center gap-4 transition-all duration-300 group"
     >
-      <div className="text-green-600 text-2xl group-hover:text-orange-500 transition-colors duration-200">
+      <div className="text-green-600 text-2xl group-hover:text-pink-600 transition-colors duration-200">
         {icon}
       </div>
       <div>

@@ -56,27 +56,19 @@ export default function Hero() {
             className="flex-shrink-0"
           >
             <div className="relative w-60 h-60 md:w-72 md:h-72">
+
               {/* Decorative circle behind */}
               <div className="absolute inset-0 rounded-full bg-green-50 border-2 border-green-100 scale-110" />
-              
-              {/* Floating orange dot */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                className="absolute top-2 right-2 w-4 h-4 rounded-full bg-orange-400 z-10"
-              />
 
-              {/* Floating green dot */}
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                className="absolute bottom-4 left-2 w-3 h-3 rounded-full bg-green-400 z-10"
-              />
-
-              {/* Profile image placeholder */}
-              <div className="relative w-full h-full rounded-full bg-gradient-to-br from-green-100 to-green-50 border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
-                <img src={profileImg} alt="Anuska Magar" className="w-full h-full object-cover" />
+              {/* Profile image */}
+              <div className="relative w-full h-full rounded-full border-4 border-white shadow-xl overflow-hidden">
+                <img
+                  src={profileImg}
+                  alt="Anuska Magar"
+                  className="w-full h-full object-cover"
+                />
               </div>
+
             </div>
           </motion.div>
 

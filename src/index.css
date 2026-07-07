@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	overflow-x: hidden;
+	background:
+		radial-gradient(circle at top, rgba(255, 228, 240, 0.7), transparent 34%),
+		linear-gradient(180deg, #fff8fb 0%, #fffdfd 45%, #fff7f9 100%);
+}
+
+#root {
+	min-height: 100vh;
+}

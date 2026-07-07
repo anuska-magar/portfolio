@@ -12,13 +12,13 @@ const iconMap = {
   tailwind: <SiTailwindcss className="text-teal-400 text-3xl" />,
   git: <FaGit className="text-orange-600 text-3xl" />,
   github: <FaGithub className="text-gray-800 text-3xl" />,
-  responsive: <FaMobileAlt className="text-green-600 text-3xl" />,
+  responsive: <FaMobileAlt className="text-pink-600 text-3xl" />,
 }
 
 export default function SkillCard({ name, icon }) {
   return (
     <motion.div
-      whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(22,163,74,0.15)" }}
+      whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(219,39,119,0.15)" }}
       className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center gap-3 cursor-default transition-all duration-300"
     >
       {iconMap[icon]}

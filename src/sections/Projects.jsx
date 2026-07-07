@@ -13,10 +13,9 @@ export default function Projects() {
     : projects.filter((p) => p.category.includes(active))
 
   return (
-    <section id="projects" className="py-20 px-6 bg-gray-50">
+    <section id="projects" className="py-20 px-6 bg-gray-50/65 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto">
 
-        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,13 +23,12 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-center mb-10"
         >
-          <p className="text-green-600 font-semibold text-sm uppercase tracking-widest mb-2">
+          <p className="text-pink-600 font-semibold text-sm uppercase tracking-widest mb-2">
             What I've Built
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">My Projects</h2>
         </motion.div>
 
-        {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
           {filters.map((filter) => (
             <button
@@ -38,8 +36,8 @@ export default function Projects() {
               onClick={() => setActive(filter)}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                 active === filter
-                  ? "bg-green-600 text-white shadow-md"
-                  : "bg-white text-gray-600 border border-gray-200 hover:border-green-400 hover:text-green-600"
+                  ? "bg-pink-600 text-white shadow-md"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-pink-400 hover:text-pink-600"
               }`}
             >
               {filter}
@@ -47,7 +45,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Project Cards */}
         <motion.div
           layout
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"

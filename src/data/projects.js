@@ -6,7 +6,7 @@ export const projects = [
     tech: ["React", "Tailwind CSS"],
     category: ["React", "UI Design"],
     github: "https://github.com/anuska-magar/portfolio",
-    color: "#16A34A",
+    color: "#111827",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const projects = [
     tech: ["React", "React Router DOM", "Axios", "Python"],
     category: ["React", "Finance"],
     github: "https://github.com/Iamashwin007/ArthaSavya2",
-    color: "#16A34A",
+    color: "#111827",
   },
   {
     id: 4,
@@ -41,6 +41,6 @@ export const projects = [
     description: "A modern e-commerce shoe website with polished product browsing, shopping, and checkout features. (First Year Project)",
     tech: ["HTML", "CSS", "JavaScript"],
     category: ["JavaScript", "UI Design"],
-    color: "#16A34A",
+    color: "#111827",
   },
 ]

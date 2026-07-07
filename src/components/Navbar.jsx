@@ -59,7 +59,7 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-white/80 backdrop-blur-sm"
+        scrolled ? "bg-pink-50 shadow-md" : "bg-pink-50/80 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -76,7 +76,7 @@ export default function Navbar() {
                 <button
                   onClick={() => handleNavClick(link)}
                   className={`relative font-medium text-sm transition-colors duration-200 ${
-                    isActive ? "text-green-600" : "text-gray-600 hover:text-green-600"
+                    isActive ? "text-pink-600" : "text-gray-600 hover:text-pink-600"
                   }`}
                 >
                   {link}
@@ -85,7 +85,7 @@ export default function Navbar() {
                   {isActive && (
                     <motion.span
                       layoutId="underline"
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-green-600 rounded-full"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-pink-600 rounded-full"
                     />
                   )}
                 </button>
@@ -110,7 +110,7 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-white border-t border-gray-100 px-6 py-4"
+          className="md:hidden bg-pink-50 border-t border-pink-100 px-6 py-4"
         >
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => {
@@ -121,8 +121,8 @@ export default function Navbar() {
                     onClick={() => handleNavClick(link)}
                     className={`font-medium transition-colors duration-200 ${
                       isActive
-                        ? "text-green-600"
-                        : "text-gray-600 hover:text-green-600"
+                        ? "text-pink-600"
+                        : "text-gray-600 hover:text-pink-600"
                     }`}
                   >
                     {link}

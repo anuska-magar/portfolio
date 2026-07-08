@@ -46,7 +46,7 @@ export default function Contact() {
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Contact Me</h2>
           <p className="text-gray-500 mt-3 text-sm max-w-md mx-auto">
-            I'm currently open to internship opportunities. Feel free to reach out!
+           Feel free to reach out!
           </p>
         </motion.div>
 
